@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul id='cat-list'></ul>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-md-6" id="cat">
+					<h2 id="cat-name"></h2>
+					<div id="cat-count"></div>
+					<div class="col-md-6">
+						<img id="cat-img" class="img-responsive" src="" alt="cat">
+					</div>
+				</div>
+				<br>
+				<div class="col-md-12" id="admin">
+					<button class="btn btn-success" id="admin-button">
+						Admin
+					</button>
+					<form id="admin-form" class="form-horizontal" role="form">
+						<label for="name" name="name" class="col-md-2 control-label">Name</label>
+						<div class="input-group col-md-5">
+							<input class="form-control" id="name" type="text" name="name">
+						</div>
+						<label for="url" name="url" class="col-md-2 control-label">URL</label>
+						<div class="input-group col-md-5">
+							<input class="form-control" id="url" type="text" name="url">
+						</div>
+						<label for="count" name="count" class="col-md-2 control-label">Count</label>
+						<div class="input-group col-md-5">
+							<input class="form-control" id="count" type="text" name="count">
+						</div>
+						<br>
+							<a type="button" class="btn btn-success" id="save">Save</a>
+							<a type="button" class="btn btn-primary" id="cancel">Cancel</a>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
